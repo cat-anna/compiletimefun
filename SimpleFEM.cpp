@@ -278,35 +278,6 @@ private:
 
 constexpr StaticSolver<ELEMENT_COUNT> Solution = StaticSolver<ELEMENT_COUNT>();
 
-
-#ifndef ELEMENT_COUNT
-#define ELEMENT_COUNT 50
-#endif
-
-#ifndef ENVIRONMENT_TEMPERATURE
-#define ENVIRONMENT_TEMPERATURE 40.0f
-#endif
-
-#ifndef HEAT_SOURCE_DENSITY
-#define HEAT_SOURCE_DENSITY -150
-#endif
-
-#ifndef CONVECTION_COEFFICIENT
-#define CONVECTION_COEFFICIENT 1.0f
-#endif
-
-#ifndef HEAT_TRANSFER_COEFFICIENT
-#define HEAT_TRANSFER_COEFFICIENT 75.0f
-#endif
-
-#ifndef CROSSECTION_AREA
-#define CROSSECTION_AREA 1.0f
-#endif
-
-#ifndef ROD_LENGTH
-#define ROD_LENGTH 5.0f
-#endif
-
 int main() {
 	std::cout << "Compile-time conditions:\n"
 		<< "ENVIRONMENT_TEMPERATURE: " << ENVIRONMENT_TEMPERATURE << "\n"
